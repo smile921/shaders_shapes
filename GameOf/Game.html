@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link media="all" href="./autoptimize.css" rel="stylesheet"/>
+        <script type='text/javascript' src='./jquery.min.js' id='jquery-core-js'></script>
+        <style>
+            .jaalone, .jaaltwo {
+                background: url(https://pianu.com/wp-content/themes/pianu/img/pianodots.png);
+                height: 145px;
+                width: 28%;
+                background-repeat: repeat-x;
+                background-size: contain;
+                margin: 0 auto;
+                border-radius: 30px;
+            }
+
+            .newquerytable {
+                width: 40%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .controls-wrap {
+                background: url(https://pianu.com/wp-content/themes/pianu/img/pianoheadbg.png);
+                background-repeat: repeat-x;
+                background-size: contain;
+                padding: 0;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            .newquerytable {
+                border-radius: 15px;
+                width: 40%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                background: url(https://pianu.com/wp-content/themes/pianu/img/quertybg.png);
+                min-height: 150px;
+                background-size: contain;
+                background-repeat: repeat-x;
+                padding: 20px 0;
+                border: 3px solid #000;
+            }
+
+            .insidelearn {
+                margin: 0 auto;
+                color: #fff;
+                text-align: center;
+                width: 38%;
+                padding: 30px;
+                background: url(https://pianu.com/wp-content/themes/pianu/img/anyonebg.png);
+                background-repeat: repeat-x;
+                background-size: contain;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                margin-top: -2px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .hero-keyboard .keyboard-dude {
+                background: url(https://pianu.com/wp-content/uploads/2018/09/keyboard-page-min-min.png) no-repeat center center;
+                background-size: cover !important;
+            }
+
+            body.page-template-academy .mainpagediv {
+                background: #5b299a !important;
+            }
+
+            @media screen and (max-width: 767px) {
+                .blog-image {
+                    background: none !important;
+                }
+
+                body.night, .branding.night, #header.night {
+                    background: #242424 !important;
+                }
+
+                .keyboard-controls {
+                    transform: scale(1);
+                    width: 100%;
+                    transform-origin: 0 0;
+                    height: 30px;
+                }
+            }
+        </style>
+        
+    </head>
+    <body class="post-template-default single single-post postid-53202 single-format-standard kc-css-system">
+        <!-- Header. -->
+        
+        <!-- the musicXMl file -->
+        <div class="musicXml">./MN0168678_GameofThrones-1.xml</div>
+        <!-- <div class="musicXml">https://pianu.com/wp-content/uploads/2019/05/MN0168678_GameofThrones-1.xml</div> -->
+        <div id="scrollLine"></div>
+        <!-- note lanes lines -->
+        <div class="note-lanes">
+            <div class="note A0"></div>
+            <div class="note B0"></div>
+            <div class="note C1"></div>
+            <div class="note D1"></div>
+            <div class="note E1"></div>
+            <div class="note F1"></div>
+            <div class="note G1"></div>
+            <div class="note A1"></div>
+            <div class="note B1"></div>
+            <div class="note C2"></div>
+            <div class="note D2"></div>
+            <div class="note E2"></div>
+            <div class="note F2"></div>
+            <div class="note G2"></div>
+            <div class="note A2"></div>
+            <div class="note B2"></div>
+            <div class="note C3"></div>
+            <div class="note D3"></div>
+            <div class="note E3"></div>
+            <div class="note F3"></div>
+            <div class="note G3"></div>
+            <div class="note A3"></div>
+            <div class="note B3"></div>
+            <div class="note C4"></div>
+            <div class="note D4"></div>
+            <div class="note E4"></div>
+            <div class="note F4"></div>
+            <div class="note G4"></div>
+            <div class="note A4"></div>
+            <div class="note B4"></div>
+            <div class="note C5"></div>
+            <div class="note D5"></div>
+            <div class="note E5"></div>
+            <div class="note F5"></div>
+            <div class="note G5"></div>
+            <div class="note A5"></div>
+            <div class="note B5"></div>
+            <div class="note C6"></div>
+            <div class="note D6"></div>
+            <div class="note E6"></div>
+            <div class="note F6"></div>
+            <div class="note G6"></div>
+            <div class="note A6"></div>
+            <div class="note B6"></div>
+            <div class="note C7"></div>
+            <div class="note D7"></div>
+            <div class="note E7"></div>
+            <div class="note F7"></div>
+            <div class="note G7"></div>
+            <div class="note A7"></div>
+            <div class="note B7"></div>
+            <div class="note C8"></div>
+        </div>
+        <div class="score-star three-star"></div>
+        <!-- show when keyboard is detected -->
+        <div class="connected">Keyboard Detected!</div>
+        <!-- all the song and lesson information -->
+
+        <div class="info-and-controls" style="background-size: cover; background: white;">
+            <!-- Performance Mode slider -->
+            <div class="wrap_slider">
+                <div id="performance-slider">
+                    <div class="performance-amount-slid"></div>
+                    <span class="slider-handle"></span>
+                </div>
+            </div>
+            <!-- Practice Mode Slider -->
+            <div class="wrap_slider">
+                <div class="practice-headline" style="transition: 0.2s">
+                    <h3>XP PROGRESS </h3>
+                </div>
+                <div id="practice-slider">
+                    <div class="practice-amount-slid"></div>
+                </div>
+            </div>
+            <!-- song info -->
+            <div class="song-info">
+                
+            </div>
+            <!-- all song controls -->
+            <div class="song-controls">
+                <!-- info button -->
+                <div class="info">
+                    <span class="arrow">↑
+            </span>
+                    <span class="text">Info
+            </span>
+                </div>
+                <!-- slow mo -->
+                <div class="half-speed">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-speedometer-slow" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 16C13.66 16 15 14.66 15 13C15 11.88 14.39 10.9 13.5 10.39L3.79 4.77L9.32 14.35C9.82 15.33 10.83 16 12 16M12 3C10.19 3 8.5 3.5 7.03 4.32L9.13 5.53C10 5.19 11 5 12 5C16.42 5 20 8.58 20 13C20 15.21 19.11 17.21 17.66 18.65H17.65C17.26 19.04 17.26 19.67 17.65 20.06C18.04 20.45 18.68 20.45 19.07 20.07C20.88 18.26 22 15.76 22 13C22 7.5 17.5 3 12 3M2 13C2 15.76 3.12 18.26 4.93 20.07C5.32 20.45 5.95 20.45 6.34 20.06C6.73 19.67 6.73 19.04 6.34 18.65C4.89 17.2 4 15.21 4 13C4 12 4.19 11 4.54 10.1L3.33 8C2.5 9.5 2 11.18 2 13Z"></path>
+                    </svg>
+                </div>
+                <!-- pause button -->
+                <div class="pause">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 9950 9860" preserveAspectRatio="xMidYMid meet">
+                        <g id="layer102" fill="#ffffff" stroke="none">
+                            <path d="M4730 9234 c-226 -19 -319 -30 -468 -55 -305 -50 -578 -126 -867 -240 -195 -76 -453 -203 -462 -226 -4 -10 -18 -36 -32 -57 -35 -53 -36 -154 -4 -207 47 -74 65 -84 171 -87 l97 -3 135 65 c373 180 759 293 1200 353 194 26 756 26 950 0 440 -60 825 -173 1198 -352 791 -380 1437 -1026 1817 -1817 179 -373 292 -758 352 -1198 26 -194 26 -756 0 -950 -148 -1096 -697 -2021 -1582 -2667 -459 -335 -1041 -578 -1605 -672 -258 -42 -309 -46 -655 -46 -346 0 -397 4 -655 46 -1040 173 -1981 788 -2574 1684 -340 514 -529 1032 -618 1695 -17 129 -17 741 0 870 25 188 55 347 92 500 155 625 452 1179 896 1671 60 67 114 133 121 148 7 16 15 62 19 103 9 98 -13 145 -82 178 -68 33 -121 36 -196 11 -53 -18 -75 -32 -129 -89 -495 -510 -877 -1209 -1054 -1928 -42 -169 -88 -438 -106 -619 -18 -169 -18 -651 0 -820 129 -1277 797 -2412 1847 -3137 499 -345 1093 -588 1692 -692 279 -49 415 -60 747 -60 332 0 468 11 747 60 757 132 1494 482 2068 982 762 664 1265 1559 1429 2544 45 266 56 406 56 713 0 307 -11 447 -56 713 -191 1147 -841 2168 -1805 2834 -579 400 -1253 650 -1974 733 -127 15 -608 28 -710 19z"/>
+                            <path d="M5659 6678 c-57 -51 -130 -181 -146 -258 -2 -14 -11 -45 -19 -70 -12 -39 -14 -252 -11 -1410 2 -1236 4 -1371 19 -1432 9 -37 23 -82 31 -100 8 -18 20 -47 27 -65 6 -17 22 -41 36 -54 13 -12 24 -27 24 -33 1 -6 22 -28 48 -48 46 -38 48 -38 138 -38 l91 0 45 43 c73 69 124 166 161 302 14 52 22 2764 8 2815 -5 19 -17 64 -26 100 -19 76 -92 201 -144 247 -36 32 -37 32 -141 33 -105 0 -105 0 -141 -32z"/>
+                            <path d="M4043 6675 c-7 -7 -21 -19 -31 -27 -24 -16 -112 -157 -112 -178 0 -9 -7 -25 -15 -36 -8 -10 -15 -31 -15 -45 0 -14 -7 -45 -15 -70 -13 -38 -15 -212 -12 -1399 3 -1462 1 -1413 55 -1534 12 -27 22 -54 22 -60 0 -7 13 -27 30 -46 16 -19 29 -41 30 -47 0 -7 3 -13 8 -13 4 0 25 -16 47 -35 39 -35 41 -35 133 -35 l93 0 43 42 c53 52 107 137 126 198 8 25 21 56 29 70 14 21 16 179 16 1455 l0 1430 -23 65 c-31 87 -97 197 -145 243 l-39 37 -107 0 c-77 -1 -109 -5 -118 -15z"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="play">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="108px" height="103px" viewBox="0 0 1080 1030" preserveAspectRatio="xMidYMid meet">
+                        <g id="layer101" fill="#ffffff" stroke="none">
+                            <path d="M410 924 c-73 -23 -110 -46 -110 -70 0 -33 22 -35 86 -9 72 30 198 34 260 10 164 -65 254 -191 254 -355 0 -163 -94 -295 -253 -354 -75 -28 -204 -20 -281 18 -218 107 -277 383 -124 578 33 42 34 71 1 76 -28 4 -93 -77 -124 -155 -33 -83 -37 -218 -10 -295 80 -231 315 -357 539 -289 85 26 138 59 199 123 113 121 148 274 98 435 -65 214 -324 352 -535 287z"/>
+                            <path d="M436 694 c-8 -20 -8 -368 0 -388 12 -32 51 -14 159 77 84 71 110 98 110 117 0 18 -26 46 -110 117 -108 91 -146 110 -159 77z m192 -195 c-2 -4 -31 -30 -65 -59 l-63 -52 0 111 0 112 65 -53 c36 -28 64 -55 63 -59z"/>
+                        </g>
+                    </svg>
+                </div>
+                <!-- hands -->
+                <div class="hand-choice-container">
+                    <div class="left-hand"></div>
+                    <div class="right-hand"></div>
+                </div>
+                <div class="left-bar">
+                    <div class="more-practice">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 0H21.75C22.9927 0 24 1.00734 24 2.25V21.75C24 22.9927 22.9927 24 21.75 24H2.25C1.00734 24 0 22.9927 0 21.75V2.25C0 1.00734 1.00734 0 2.25 0ZM18.75 22.5H21.75C22.1642 22.5 22.5 22.1642 22.5 21.75V2.25C22.5 1.83577 22.1642 1.5 21.75 1.5H20.25V12.75C20.25 13.1642 19.9142 13.5 19.5 13.5H18.75V22.5ZM12.75 22.5H17.25V13.5H16.5C16.0858 13.5 15.75 13.1642 15.75 12.75V1.5H14.25V12.75C14.25 13.1642 13.9142 13.5 13.5 13.5H12.75V22.5ZM6.75 22.5H11.25V13.5H10.5C10.0858 13.5 9.75 13.1642 9.75 12.75V1.5H8.25V12.75C8.25 13.1642 7.91423 13.5 7.5 13.5H6.75V22.5ZM1.5 21.75C1.5 22.1642 1.83577 22.5 2.25 22.5H5.25V13.5H4.5C4.08577 13.5 3.75 13.1642 3.75 12.75V1.5H2.25C1.83577 1.5 1.5 1.83577 1.5 2.25V21.75Z" fill="#232323"></path>
+                        </svg>
+                    </div>
+                    <div class="hear-the-song">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="108px" height="103px" viewBox="0 0 1080 1030" preserveAspectRatio="xMidYMid meet">
+                            <g id="layer101" fill="#ffffff" stroke="none">
+                                <path d="M410 924 c-73 -23 -110 -46 -110 -70 0 -33 22 -35 86 -9 72 30 198 34 260 10 164 -65 254 -191 254 -355 0 -163 -94 -295 -253 -354 -75 -28 -204 -20 -281 18 -218 107 -277 383 -124 578 33 42 34 71 1 76 -28 4 -93 -77 -124 -155 -33 -83 -37 -218 -10 -295 80 -231 315 -357 539 -289 85 26 138 59 199 123 113 121 148 274 98 435 -65 214 -324 352 -535 287z"/>
+                                <path d="M436 694 c-8 -20 -8 -368 0 -388 12 -32 51 -14 159 77 84 71 110 98 110 117 0 18 -26 46 -110 117 -108 91 -146 110 -159 77z m192 -195 c-2 -4 -31 -30 -65 -59 l-63 -52 0 111 0 112 65 -53 c36 -28 64 -55 63 -59z"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- END POINT DROPDOWN -->
+    
+        <!--END OF ENDPOINT Drop Down-->
+        <!-- score -->
+        
+        <!-- END OF GLOBALS -->
+        <!-- Output song -->
+        <div class='song-wrapper'>
+            <div class='song-right'>
+                <div class='note A0'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b AS0'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note B0'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note C1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b CS1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note D1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b DS1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note E1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note F1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b FS1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note G1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b GS1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note A1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b AS1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note B1'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note C2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b CS2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note D2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b DS2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note E2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note F2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b FS2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note G2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b GS2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note A2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b AS2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note B2'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note C3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b CS3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note D3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b DS3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note E3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note F3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b FS3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note G3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b GS3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note A3'>
+                    <div class='rest' style='height:4380px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:6420.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:2640.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:2580px' class='rest'></div>
+                </div>
+                <div class='note b AS3'>
+                    <div class='rest' style='height:4560px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:11520px' class='rest'></div>
+                </div>
+                <div class='note B3'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note C4'>
+                    <div class='rest' style='height:4320px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:5700.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:180.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:180.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:1440.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:180.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:2520px' class='rest'></div>
+                </div>
+                <div class='note b CS4'>
+                    <div class='rest' style='height:4440px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:12060px' class='rest'></div>
+                </div>
+                <div class='note D4'>
+                    <div class='rest' style='height:1860px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:360.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:900.125px' class='rest'></div>
+                    <div style='height:599.875px' class='righthand'></div>
+                    <div style='height:390.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:720.125px' class='rest'></div>
+                    <div style='height:239.875px' class='righthand'></div>
+                    <div style='height:4020.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:960.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:570.125px' class='rest'></div>
+                    <div style='height:119.875px' class='righthand'></div>
+                    <div style='height:180.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:540.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:960.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:570.125px' class='rest'></div>
+                    <div style='height:119.875px' class='righthand'></div>
+                    <div style='height:180.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:60px' class='rest'></div>
+                </div>
+                <div class='note b DS4'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note E4'>
+                    <div class='rest' style='height:4680px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:5310.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:330.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:510.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:1380.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:330.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:510.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:2160px' class='rest'></div>
+                </div>
+                <div class='note F4'>
+                    <div class='rest' style='height:2160px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:420.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:239.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:900.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:360.125px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:420.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:239.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:3570.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:330.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:1110.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:270.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:1050.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:330.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:1110.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:270.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:1110.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:120px' class='rest'></div>
+                </div>
+                <div class='note b FS4'>
+                    <div class='rest' style='height:15150px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:840px' class='rest'></div>
+                </div>
+                <div class='note G4'>
+                    <div class='rest' style='height:4320px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:2700.125px' class='rest'></div>
+                    <div style='height:89.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:89.875px' class='righthand'></div>
+                    <div style='height:2880.125px' class='rest'></div>
+                    <div style='height:119.875px' class='righthand'></div>
+                    <div style='height:240.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:720.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:270.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:450.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:600.125px' class='rest'></div>
+                    <div style='height:119.875px' class='righthand'></div>
+                    <div style='height:240.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:720.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:270.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:390.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150px' class='rest'></div>
+                </div>
+                <div class='note b GS4'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note A4'>
+                    <div class='rest' style='height:780px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:540.125px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:360.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:720.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:599.875px' class='righthand'></div>
+                    <div style='height:720.125px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:30.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:300.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:720.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:780.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:1200.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:2040.125px' class='rest'></div>
+                    <div style='height:119.875px' class='righthand'></div>
+                    <div style='height:240.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:2340.125px' class='rest'></div>
+                    <div style='height:119.875px' class='righthand'></div>
+                    <div style='height:240.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b AS4'>
+                    <div class='rest' style='height:930px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:300.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:360.125px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:2520.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:30.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:750.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:2670.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:2640.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:4080px' class='rest'></div>
+                </div>
+                <div class='note B4'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note C5'>
+                    <div class='rest' style='height:720px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:1710.125px' class='rest'></div>
+                    <div style='height:239.875px' class='righthand'></div>
+                    <div style='height:30.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:300.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:2220.125px' class='rest'></div>
+                    <div style='height:239.875px' class='righthand'></div>
+                    <div style='height:30.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:300.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:330.125px' class='rest'></div>
+                    <div style='height:89.875px' class='righthand'></div>
+                    <div style='height:90.125px' class='rest'></div>
+                    <div style='height:89.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:89.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:180.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:900.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:2850.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:4110px' class='rest'></div>
+                </div>
+                <div class='note b CS5'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note D5'>
+                    <div class='rest' style='height:660px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:390.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:1380.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:30.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:2520.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:30.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:299.875px' class='righthand'></div>
+                    <div style='height:900.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:570.125px' class='rest'></div>
+                    <div style='height:119.875px' class='righthand'></div>
+                    <div style='height:180.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:180.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:60.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:2640.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:3960px' class='rest'></div>
+                </div>
+                <div class='note b DS5'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note E5'>
+                    <div class='rest' style='height:1440px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:180.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:5460.125px' class='rest'></div>
+                    <div style='height:89.875px' class='righthand'></div>
+                    <div style='height:90.125px' class='rest'></div>
+                    <div style='height:89.875px' class='righthand'></div>
+                    <div style='height:480.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:0.125px' class='rest'></div>
+                    <div style='height:359.875px' class='righthand'></div>
+                    <div style='height:7920px' class='rest'></div>
+                </div>
+                <div class='note F5'>
+                    <div class='rest' style='height:1620px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:5580.125px' class='rest'></div>
+                    <div style='height:89.875px' class='righthand'></div>
+                    <div style='height:1200.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:270.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:7560px' class='rest'></div>
+                </div>
+                <div class='note b FS5'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note G5'>
+                    <div class='rest' style='height:7740px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:720.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:270.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:7590px' class='rest'></div>
+                </div>
+                <div class='note b GS5'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note A5'>
+                    <div class='rest' style='height:240px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:8160.125px' class='rest'></div>
+                    <div style='height:119.875px' class='righthand'></div>
+                    <div style='height:240.125px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:7200px' class='rest'></div>
+                </div>
+                <div class='note b AS5'>
+                    <div class='rest' style='height:210px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:15960px' class='rest'></div>
+                </div>
+                <div class='note B5'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note C6'>
+                    <div class='rest' style='height:180px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:150.125px' class='rest'></div>
+                    <div style='height:29.875px' class='righthand'></div>
+                    <div style='height:15990px' class='rest'></div>
+                </div>
+                <div class='note b CS6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note D6'>
+                    <div class='rest' style='height:0px'></div>
+                    <div style='height:0px' class='rest'></div>
+                    <div style='height:179.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:120.125px' class='rest'></div>
+                    <div style='height:59.875px' class='righthand'></div>
+                    <div style='height:16020px' class='rest'></div>
+                </div>
+                <div class='note b DS6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note E6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note F6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b FS6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note G6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b GS6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note A6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b AS6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note B6'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note C7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b CS7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note D7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b DS7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note E7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note F7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b FS7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note G7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b GS7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note A7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note b AS7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note B7'>
+                    <div class='rest' style='height:16559.875px'></div>
+                    <div style='height:0px' class='rest'></div>
+                </div>
+                <div class='note C8'>
+                    <div class='rest' style='height:16559.875px'></div>
+</p></div></p></div>
+<div class='song-left'>
+    <div class='note A0'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b AS0'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note B0'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note C1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b CS1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note D1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b DS1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note E1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note F1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b FS1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note G1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b GS1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note A1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b AS1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note B1'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note C2'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b CS2'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note D2'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b DS2'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note E2'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note F2'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b FS2'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note G2'>
+        <div class='rest' style='height:1620px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:2700.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:7560.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:3600px' class='rest'></div>
+    </div>
+    <div class='note b GS2'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note A2'>
+        <div class='rest' style='height:1440px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:2700.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:3420.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:2160.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:2160.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:2160px' class='rest'></div>
+    </div>
+    <div class='note b AS2'>
+        <div class='rest' style='height:1800px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:1080.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:1080.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:1080.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:10080px' class='rest'></div>
+    </div>
+    <div class='note B2'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note C3'>
+        <div class='rest' style='height:7200px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:2160.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:2160.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:2880px' class='rest'></div>
+    </div>
+    <div class='note b CS3'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note D3'>
+        <div class='rest' style='height:720px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:180.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:360.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:1080.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:180.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:360.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:1080.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:1440.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:1440.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:2160.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:719.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:719.875px' class='lefthand'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b DS3'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note E3'>
+        <div class='rest' style='height:4320px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:12060px' class='rest'></div>
+    </div>
+    <div class='note F3'>
+        <div class='rest' style='height:1800px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:359.875px' class='lefthand'></div>
+        <div style='height:720.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:359.875px' class='lefthand'></div>
+        <div style='height:1080.125px' class='rest'></div>
+        <div style='height:359.875px' class='lefthand'></div>
+        <div style='height:720.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:10440px' class='rest'></div>
+    </div>
+    <div class='note b FS3'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note G3'>
+        <div class='rest' style='height:1440px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:900.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:2520.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:29.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:89.875px' class='lefthand'></div>
+        <div style='height:1440.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:9000px' class='rest'></div>
+    </div>
+    <div class='note b GS3'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note A3'>
+        <div class='rest' style='height:2880px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:359.875px' class='lefthand'></div>
+        <div style='height:360.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:60.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:60.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:60.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:60.125px' class='rest'></div>
+        <div style='height:119.875px' class='lefthand'></div>
+        <div style='height:10800.125px' class='rest'></div>
+        <div style='height:719.875px' class='lefthand'></div>
+        <div style='height:0.125px' class='rest'></div>
+        <div style='height:719.875px' class='lefthand'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b AS3'>
+        <div class='rest' style='height:2520px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:179.875px' class='lefthand'></div>
+        <div style='height:960.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:120.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:60.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:120.125px' class='rest'></div>
+        <div style='height:59.875px' class='lefthand'></div>
+        <div style='height:12360px' class='rest'></div>
+    </div>
+    <div class='note B3'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note C4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b CS4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note D4'>
+        <div class='rest' style='height:0px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:719.875px' class='lefthand'></div>
+        <div style='height:15840px' class='rest'></div>
+    </div>
+    <div class='note b DS4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note E4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note F4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b FS4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note G4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b GS4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note A4'>
+        <div class='rest' style='height:0px'></div>
+        <div style='height:0px' class='rest'></div>
+        <div style='height:719.875px' class='lefthand'></div>
+        <div style='height:15840px' class='rest'></div>
+    </div>
+    <div class='note b AS4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note B4'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note C5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b CS5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note D5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b DS5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note E5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note F5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b FS5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note G5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b GS5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note A5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b AS5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note B5'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note C6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b CS6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note D6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b DS6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note E6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note F6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b FS6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note G6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b GS6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note A6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b AS6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note B6'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note C7'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b CS7'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note D7'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b DS7'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note E7'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note F7'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note b FS7'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+    <div class='note G7'>
+        <div class='rest' style='height:16559.875px'></div>
+        <div style='height:0px' class='rest'></div>
+    </div>
+</div>
+</div><div class='time'>137998.95833333</div>
+<div class='starting-key'>A4</div>
+<div id='bpm'></div>
+<div class='sfsi_Sicons' style='width: 100%; display: inline-block; vertical-align: middle; text-align:left'>
+    
+</div>
+<!-- done outputting song -->
+<div class="main-keyboard">
+    <div class="keyC1 keyz"></div>
+    <div class="keyCS1 keyz black"></div>
+    <div class="keyD1 keyz"></div>
+    <div class="keyDS1 keyz black"></div>
+    <div class="keyE1 keyz"></div>
+    <div class="keyF1 keyz"></div>
+    <div class="keyFS1 keyz black"></div>
+    <div class="keyG1 keyz"></div>
+    <div class="keyGS1 keyz black"></div>
+    <div class="keyA1 keyz"></div>
+    <div class="keyAS1 keyz black"></div>
+    <div class="keyB1 keyz"></div>
+    <div class="keyC2 keyz"></div>
+    <div class="keyCS2 keyz black"></div>
+    <div class="keyD2 keyz"></div>
+    <div class="keyDS2 keyz black"></div>
+    <div class="keyE2 keyz"></div>
+    <div class="keyF2 keyz"></div>
+    <div class="keyFS2 keyz black"></div>
+    <div class="keyG2 keyz"></div>
+    <div class="keyGS2 keyz black"></div>
+    <div class="keyA2 keyz"></div>
+    <div class="keyAS2 keyz black"></div>
+    <div class="keyB2 keyz"></div>
+    <div class="keyC3 keyz"></div>
+    <div class="keyCS3 keyz black"></div>
+    <div class="keyD3 keyz"></div>
+    <div class="keyDS3 keyz black"></div>
+    <div class="keyE3 keyz"></div>
+    <div class="keyF3 keyz"></div>
+    <div class="keyFS3 keyz black"></div>
+    <div class="keyG3 keyz"></div>
+    <div class="keyGS3 keyz black"></div>
+    <div class="keyA3 keyz"></div>
+    <div class="keyAS3 keyz black"></div>
+    <div class="keyB3 keyz"></div>
+    <div class="keyC4 keyz"></div>
+    <div class="keyCS4 keyz black"></div>
+    <div class="keyD4 keyz"></div>
+    <div class="keyDS4 keyz black"></div>
+    <div class="keyE4 keyz"></div>
+    <div class="keyF4 keyz"></div>
+    <div class="keyFS4 keyz black"></div>
+    <div class="keyG4 keyz"></div>
+    <div class="keyGS4 keyz black"></div>
+    <div class="keyA4 keyz"></div>
+    <div class="keyAS4 keyz black"></div>
+    <div class="keyB4 keyz"></div>
+    <div class="keyC5 keyz"></div>
+    <div class="keyCS5 keyz black"></div>
+    <div class="keyD5 keyz"></div>
+    <div class="keyDS5 keyz black"></div>
+    <div class="keyE5 keyz"></div>
+    <div class="keyF5 keyz"></div>
+    <div class="keyFS5 keyz black"></div>
+    <div class="keyG5 keyz"></div>
+    <div class="keyGS5 keyz black"></div>
+    <div class="keyA5 keyz"></div>
+    <div class="keyAS5 keyz black"></div>
+    <div class="keyB5 keyz"></div>
+    <div class="keyC6 keyz"></div>
+    <div class="keyCS6 keyz black"></div>
+    <div class="keyD6 keyz"></div>
+    <div class="keyDS6 keyz black"></div>
+    <div class="keyE6 keyz"></div>
+    <div class="keyF6 keyz"></div>
+    <div class="keyFS6 keyz black"></div>
+    <div class="keyG6 keyz"></div>
+    <div class="keyGS6 keyz black"></div>
+    <div class="keyA6 keyz"></div>
+    <div class="keyAS6 keyz black"></div>
+    <div class="keyB6 keyz"></div>
+    <div class="keyC7 keyz"></div>
+    <div class="keyCS7 keyz black"></div>
+    <div class="keyD7 keyz"></div>
+    <div class="keyDS7 keyz black"></div>
+    <div class="keyE7 keyz"></div>
+    <div class="keyF7 keyz"></div>
+    <div class="keyFS7 keyz black"></div>
+    <div class="keyG7 keyz"></div>
+</div>
+<div class="lip"></div>
+<!-- SOUND EFFECTS -->
+<!-- GLOBAL FX -->
+<div class="air-pop ui-global"></div>
+<div class="link-click ui-global"></div>
+<div class="open-close ui-global"></div>
+<!-- SONGS/LESSONS FX -->
+<div class="victory-music ui-library"></div>
+<div class="drop-down ui-library"></div>
+<div class="song-complete ui-library"></div>
+<div class="end-of-song ui-library"></div>
+<div class="count-off-click ui-library"></div>
+<div class="paper-slide ui-library"></div>
+
+<script>
+        
+</script> 
+<script type='text/javascript' id='lazysizes-js-before'>
+    window.lazySizesConfig = window.lazySizesConfig || {};
+</script>
+<script type='text/javascript' id='pt-cv-content-views-script-js-extra'>
+    /* <![CDATA[ */
+    var PT_CV_PUBLIC = {
+        "_prefix": "pt-cv-",
+        "page_to_show": "5",
+        "_nonce": "57ef21baf2",
+        "is_admin": "",
+        "is_mobile": "",
+        "ajaxurl": "https:\/\/pianu.com\/",
+        "lang": "",
+        "loading_image_src": "data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw==",
+        "is_mobile_tablet": "",
+        "sf_no_post_found": "No posts found.",
+        "lf__separator": ","
+    };
+    var PT_CV_PAGINATION = {
+        "first": "\u00ab",
+        "prev": "\u2039",
+        "next": "\u203a",
+        "last": "\u00bb",
+        "goto_first": "Go to first page",
+        "goto_prev": "Go to previous page",
+        "goto_next": "Go to next page",
+        "goto_last": "Go to last page",
+        "current_page": "Current page is",
+        "goto_page": "Go to page"
+    };
+    /* ]]> */
+</script>
+<!-- <script type='text/javascript' src='./regenerator-runtime.min.js' id='regenerator-runtime-js'></script> -->
+<script type='text/javascript' src='./wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script defer src="./autoptimize.js"></script>
+</body>
+</html>

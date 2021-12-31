@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="description"
+        content="Experience the most realistic virtual guitar online. Play your favourite chords and melodies">
+    <meta name="keywords"
+        content="guitar,virtual guitar,online guitar,guitar online,classical guitar, guitar game, chords,play guitar,music, jazz">
+    <meta property="og:url" content="https://recursivearts.com/online-guitar/" />
+    <meta property="og:type" content="game" />
+    <meta property="og:title" content="Online Guitar | The Ultimate Guitar Simulation" />
+    <meta property="og:description"
+        content="A realistic 3D guitar simulation to play your favourite chords and melodies" />
+    <meta property="og:image" content="../online-guitar/OnlineGuitar.jpg" />
+
+    <title>Online Guitar | The Ultimate Guitar Simulation</title>
+    <link rel="icon" type="image/png" href="../virtual-piano/favicon.png">
+
+    <!-- Header and Menu Styles -->
+    <style>
+        .auth,
+        .auth a {
+            font-size: 95%;
+            color: #ddd;
+            padding-left: 0 6px
+        }
+
+        #ra_name,
+        #search_bar,
+        .content,
+        article {
+            font-family: Quicksand, sans-serif
+        }
+
+        #gameContainer,
+        #logos,
+        #ra_logo,
+        #ra_name,
+        .bigText,
+        #social {
+            display: inline-block
+        }
+
+        #facebook-logo,
+        #ra_logo,
+        #twitter-logo {
+            overflow: hidden;
+            white-space: nowrap;
+            text-indent: 100%
+        }
+
+        #play,
+        #social,
+        nav ul {
+            text-align: center
+        }
+
+        #app_name,
+        #search_bar {
+            text-align: right;
+            padding-right: 15px
+        }
+
+        #logos,
+        #search_bar {
+            width: 200px;
+            min-width: 130px
+        }
+
+        header {
+            width: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            height: 45px;
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            background: #333
+        }
+
+        #logos {
+            height: 50px;
+            padding-left: 15px
+        }
+
+        #ra_logo {
+            background-image: url(../imagenes/RA_Logo_Alfa.svg);
+            width: 40px;
+            height: 40px;
+            margin-top: 4px
+        }
+
+        #ra_name {
+            vertical-align: top;
+            text-align: left;
+            margin-top: 14px;
+            margin-left: 3px;
+            width: 70px;
+            color: #bbb;
+            font-size: 80%;
+            line-height: 90%
+        }
+
+        #app_name {
+            min-width: 150px;
+            color: #eee;
+            font-size: 240%;
+            font-family: 'Mr De Haviland', cursive
+        }
+
+        #search_bar {
+            display: none;
+            color: #999;
+            font-size: 100%;
+            line-height: 100%
+        }
+
+        body,
+        nav a:hover {
+            background-color: #eee
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: #fff
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            display: block;
+            transition: .3s background-color
+        }
+
+        nav li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            line-height: 40px;
+            height: 40px
+        }
+
+        *,
+        nav ul {
+            margin: 0;
+            padding: 0
+        }
+
+        #play p,
+        body {
+            font-size: 100%
+        }
+
+        #play {
+            width: 100%;
+            margin: auto;
+            min-width: 320px;
+            min-height: 180px;
+            background: #DEDBDE;
+            padding-top: 0px;
+            padding-bottom: 0px
+        }
+
+        #play p {
+            color: #818E9A;
+            padding-top: 30px;
+            font-family: monospace
+        }
+
+        #points {
+            font-size: 90%;
+            height: 26px;
+            line-height: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #789
+        }
+
+        #gameContainer {
+            height: 38.709625vw;
+            max-height: 600px;
+            width: 100%;
+            max-width: 1550px
+        }
+
+        #gameContainer canvas {
+            width: 100%;
+            height: 100%
+        }
+
+        #facebook-logo,
+        #twitter-logo {
+            display: inline-block;
+            height: 35px;
+            width: 35px;
+            margin: 0 13px
+        }
+
+        #socialmedia,
+        .mylinks {
+            vertical-align: middle;
+            display: table-cell
+        }
+
+        #social {
+            width: 100%;
+            padding: 0;
+            background: #352525
+        }
+
+        #facebook-logo {
+            background-image: url(TemplateData/facebook_icon.svg)
+        }
+
+        #twitter-logo {
+            background-image: url(TemplateData/twitter_icon.svg)
+        }
+
+        #subheader {
+            display: table;
+            margin: 20px auto;
+            max-width: 728px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%
+        }
+
+        .mylinks {
+            width: 30%;
+            padding: 0 25px;
+            color: #DEDBDE
+        }
+
+        .mylinks a {
+            color: #DEDBDE
+        }
+
+        .auth a:hover,
+        .mylinks a:hover {
+            text-decoration: underline;
+            color: #fff
+        }
+
+        .topbanner {
+            width: 100%;
+            min-height: 90px;
+            margin: 20px auto 0px
+        }
+
+        .bigText,
+        .content {
+            color: #333
+        }
+
+        .bigText {
+            font-family: 'Passion One', sans-serif;
+            font-weight: 500;
+            font-size: 180%;
+            margin-bottom: 15px
+        }
+
+        .specifications,
+        article p {
+            text-align: justify;
+            font-size: 15px
+        }
+
+        .wrapper {
+            margin: 60px auto 20px;
+            min-width: 340px;
+            display: flex;
+            max-width: 1200px;
+            flex-flow: row wrap
+        }
+
+        .wrapper>* {
+            padding: 10px 20px;
+            flex: 1 100%
+        }
+
+        .content a,
+        .content a:visited {
+            color: #333;
+            text-decoration: underline
+        }
+
+        .specifications {
+            line-height: 20px;
+            margin: 10px auto 0;
+            padding-left: 20px;
+            padding-right: 5px
+        }
+
+        #about {
+            text-align: center
+        }
+
+        @media all and (min-width:38.5em) {
+            nav li {
+                width: 120px;
+                border-bottom: none;
+                height: 32px;
+                line-height: 32px;
+                font-size: 1em;
+                display: inline-block;
+                margin-right: -4px
+            }
+        }
+
+        @media all and (min-width:50em) {
+            #search_bar {
+                display: inline-block
+            }
+
+            #app_name {
+                text-align: center;
+                padding: 0
+            }
+
+            #logos {
+                width: 200px
+            }
+
+            #play {
+                min-width: 775px;
+                min-height: 180px
+            }
+
+            .content {
+                flex: 3 0px;
+                order: 1
+            }
+        }
+
+        p#loadingInfo {
+            text-align: center;
+            color: #333;
+            letter-spacing: 1px;
+            position: absolute;
+            width: 100%;
+            font-family: Monaco, sans-serif;
+            text-transform: uppercase;
+            font-size: 12px
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 40px;
+            font-family: 'Mr De Haviland', cursive;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            margin: 10px auto 0px
+        }
+
+        .guitarrista {
+            text-align: center;
+            width: 100%;
+            font-family: 'Passion One', sans-serif;
+            font-size: 130%;
+            margin-bottom: 30px
+        }
+
+        .tutorial {
+            padding: 10px 20px;
+            text-align: justify;
+            max-width: 1200px;
+            min-width: 300px;
+            font-family: Quicksand, sans-serif;
+            display: inline-block;
+            margin: 0 auto;
+            color: #444;
+            font-size: 16px
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Logos -->
+    <header>
+        <div id="logos">
+            <a href="../" title="Recursive Arts" id="ra_logo">Recursive Arts</a>
+            <div id="ra_name">RECURSIVE ARTS</div>
+        </div>
+        <div id="app_name">Online Guitar</div>
+        
+    </header>
+
+    <!-- Nav Menu -->
+    <nav>
+        <ul>
+            <li><a class="" href="#play">PLAY</a></li>
+            <li><a class="" href="#about">ABOUT</a></li> 
+        </ul>
+    </nav>
+
+    <!-- Guitar Canvas Section -->
+    <div id="play">
+
+        <div id="gameContainer">
+            <div id="canvas"></div>
+        </div>
+    </div>
+
+    <!-- Social Section -->
+    <div id="social"> 
+  
+    </div>
+
+    <!-- Learn/About Section -->
+    <div class="wrapper" id="about">
+        <article class="content">
+            <section style="text-align:left;">
+                <h1 class="bigText">Play your favourite music on the ultimate online guitar app</h1>
+
+                <p>Here in Recursive Arts we always dreamed of giving everyone access to one of the most popular musical
+                    instruments in the world: the guitar. Our dream has now come true with <strong>Online
+                        Guitar</strong>, a beautiful and intimate instrument to express your creativity and inspire the
+                    people around you.</p><br>
+
+                <p>Our free world-class guitar simulation offers you:</p>
+                <div class="specifications">
+
+                    <ul>
+                        <li>A realistic 6-string guitar that runs natively on your web browser. Easily play notes and
+                            chords using your computer's keyboard/mouse and enjoy the studio-quality sound of a genuine
+                            <em>classical guitar</em>.</li><br>
+
+                        <li>Two separate play modes. By default you can access single notes directly from the fretboard
+                            using your mouse or keyboard, however, when activating our dedicated <strong>Chord
+                                Mode</strong> you will be able to choose from a number of predefined chords in order to
+                            perform any song you like.</li><br>
+
+                        <li>A comprehensive list of common guitar chords and the possibility to edit or create your own
+                            chords! Assign up to 10 different chords to individual keys on your computer keyboard to
+                            quickly activate your chord progressions. Also, you can either strum the strings all at
+                            once, or play beautiful arpeggios (one note at a time).</li><br>
+
+                        <li>The possibility to play a song in different keys using our virtual <strong>Capo</strong>.
+                            Press keys 1 to 8 to select the fret where you would like the capo to be applied, or press
+                            ESC to remove it. All "open" strings will now raise their pitch an equal number of
+                            semitones.</li>
+
+
+                    </ul>
+                </div>
+
+                <picture>
+                    <source type="image/webp" srcset="./TemplateData/VirtualGuitar.webp" />
+                    <source type="image/jpg" srcset="./TemplateData/VirtualGuitar.jpg" />
+                    <img class="foto" src="./TemplateData/VirtualGuitar.jpg" alt="Realistic 3D Virtual Piano Keyboard"
+                        height="501" width="1024">
+                </picture>
+
+
+                <div class="quote">" The hands find a way to do what the heart wants to say"</div><br>
+                <div class="guitarrista">Paco de Lucia</div>
+
+            </section>
+            <section class="learn">
+
+                <span class="subFact" style="font-size:85%">Virtual Guitar is compatible with most modern browsers
+                    supporting WebGL.<br> No additional plugins are required to play this musical instrument</span>
+                <br><br>
+            </section>
+        </article>
+
+        <aside class="aside">
+            <div class="rascacielos">
+                <!-- 71161633/play_vrec_1/play_vrec_1 -->
+                <div data-fuse="22383034836"></div>
+            </div>
+        </aside>
+
+    </div>
+
+
+    <!-- Songs Section -->
+    <div id="songs">
+
+        <!-- 71161633/home_footer/home_footer -->
+        <div data-fuse="22383034833"></div>
+        <br>
+
+        <h2 class="bigText">Make your own Chords</h2><br>
+        <div class="tutorial">Recursive Arts Online Guitar includes a fantastic selection of commonly used guitar chords
+            for you to learn and practice on your favourite songs. But creativity has no limits and sometimes you may
+            want to modify these chords to get that particular harmonic color, or you may simply want to create a whole
+            new combination of notes for your new composition. In any case, editing and saving new chords is really
+            simple. Switch to "Chord Mode" and follow these steps:<br><br>
+            <ol style="padding-left:25px">
+                <li>To select a <strong>guitar note</strong>, click on the corresponding string and fret. A small white
+                    circle will appear indicating the selected note.</li><br>
+                <li>To select an <strong>open string</strong> note, click the string just above the sound hole.</li><br>
+                <li>To <strong>mute a string</strong>, right click anywhere along the string. The muted string will be
+                    indicated with the <strong>X</strong> symbol.</li><br>
+                <li>Once all notes of a user chord have been added, pick one of the three user presets available and
+                    press the <strong>"Add Current Chord"</strong> button to save it.</li><br>
+                <li>Finally, select your preset chord from any of the 10 <strong>chord slots</strong> available and load
+                    it by pressing the assigned key.</li>
+            </ol>
+            <picture>
+                <!-- <source type="image/webp" srcset="TemplateData/guitar-chord-tutorial.webp" /> -->
+                <source type="image/jpg" srcset="TemplateData/guitar-chord-tutorial.jpg" />
+                <img class="foto" src="./TemplateData/guitar-chord-tutorial.jpg" alt="Make your own guitar chords "
+                    height="240" width="1200">
+            </picture>
+
+        </div><br>
+
+
+
+        <span class="fact">More chords and new features coming soon!</span><br> 
+    </div>
+
+    <footer>
+        <div id="links-left">
+           
+        <div id="copyright">&copy; 2021 Recursive Arts</div>
+        <div id="links-right"></div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="./TemplateData/UnityProgress.js"></script>
+    <script src="./Build/UnityLoader.js"></script>
+    <script type="text/javascript">
+        var gameInstance = UnityLoader.instantiate("gameContainer", "./Build/GuitarBuild.json", { onProgress: UnityProgress });
+    </script>
+    <script src="../virtual-piano/js/jquery.js"></script>
+
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" type="text/css" href="./TemplateData/guitarstyle_min.css" />
+    </noscript>
+
+    <script>
+        var loadDeferredStyles = function () {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "./js/guitarfunctions.js";
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+    </script>
+
+    <!-- <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: ['Passion+One|Quicksand|Mr+De+Haviland&display=swap'] }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();</script> -->
+
+
+    <!-- <script async type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script> -->
+</body>
+
+</html>

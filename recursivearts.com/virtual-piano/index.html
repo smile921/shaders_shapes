@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="description"
+        content="Experience the most realistic virtual piano keyboard online. Play free interactive songs with auto-accompaniment, LED-guided melody and auto player">
+    <meta name="keywords"
+        content="piano,virtual piano,online piano,piano online,piano keyboard,piano games,piano keys,play piano,music">
+    <meta property="og:url" content="https://recursivearts.com/virtual-piano/" />
+    <meta property="og:type" content="game" />
+    <meta property="og:title" content="Virtual Piano | The Best Online Keyboard with Songs Everyone Can Play" />
+    <meta property="og:description"
+        content="A realistic 3D piano keyboard with flexible and automated song accompaniment of popular songs" />
+    <meta property="og:image" content="https://recursivearts.com/virtual-piano/VirtualPianoNew.jpg" />
+    <meta property="fb:app_id" content="194411984392052" />
+    <title>Virtual Piano | 虚拟钢琴</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Header and Menu Styles -->
+    <style>
+        .auth,
+        .auth a {
+            font-size: 95%;
+            color: #ddd;
+            padding-left: 0 6px
+        }
+
+        #ra_name,
+        #search_bar,
+        .content,
+        article {
+            font-family: Quicksand, sans-serif
+        }
+
+        #unityContainer,
+        #logos,
+        #ra_logo,
+        #ra_name,
+        .bigText,
+        #social {
+            display: inline-block
+        }
+
+        #facebook-logo,
+        #ra_logo,
+        #twitter-logo {
+            overflow: hidden;
+            white-space: nowrap;
+            text-indent: 100%
+        }
+
+        #play,
+        #social,
+        nav ul {
+            text-align: center
+        }
+
+        #app_name,
+        #search_bar {
+            text-align: right;
+            padding-right: 15px
+        }
+
+        #logos,
+        #search_bar {
+            width: 200px;
+            min-width: 130px
+        }
+
+        header {
+            width: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            height: 45px;
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            background: #333
+        }
+
+        #logos {
+            height: 50px;
+            padding-left: 15px
+        }
+
+        #ra_logo {
+            background-image: url(./imagenes/RA_Logo_Alfa.svg);
+            width: 40px;
+            height: 40px;
+            margin-top: 4px
+        }
+
+        #ra_name {
+            vertical-align: top;
+            text-align: left;
+            margin-top: 14px;
+            margin-left: 3px;
+            width: 70px;
+            color: #bbb;
+            font-size: 80%;
+            line-height: 90%
+        }
+
+        #app_name {
+            padding-top: 8px;
+            min-width: 135px;
+            height: 49px;
+            line-height: 49px;
+            color: #eee;
+            font-size: 240%;
+            font-family: 'Mr De Haviland', cursive
+        }
+
+        #search_bar {
+            display: none;
+            color: #999;
+            font-size: 100%;
+            line-height: 100%
+        }
+
+        body,
+        nav a:hover {
+            background-color: #eee
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: #fff
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            display: block;
+            transition: .3s background-color
+        }
+
+        nav li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            line-height: 40px;
+            height: 40px
+        }
+
+        *,
+        nav ul {
+            margin: 0;
+            padding: 0
+        }
+
+        #play p,
+        body {
+            font-size: 100%
+        }
+
+        #play {
+            width: 100%;
+            margin: auto;
+            min-width: 320px;
+            background: #D3D9DF;
+            padding-top: 10px;
+            padding-bottom: 25px
+        }
+
+        #play p {
+            color: #818E9A;
+            padding-top: 30px;
+            font-family: monospace
+        }
+
+        #points {
+            font-size: 90%;
+            height: 26px;
+            line-height: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #536e8a
+        }
+
+        #unityContainer {
+            height: 30.9677vw;
+            max-height: 480px;
+            width: 100%;
+            max-width: 1550px
+        }
+
+        #unityContainer canvas {
+            width: 100%;
+            height: 100%
+        }
+
+        #facebook-logo,
+        #twitter-logo {
+            display: inline-block;
+            height: 35px;
+            width: 35px;
+            margin: 0 13px
+        }
+
+        #socialmedia,
+        .mylinks {
+            vertical-align: middle;
+            display: table-cell
+        }
+
+        #socialmedia {
+            min-width: 128px
+        }
+
+        #social {
+            width: 100%;
+            padding: 0;
+            background: #303942
+        }
+
+        #facebook-logo {
+            background-image: url(TemplateData100/facebook_icon.svg)
+        }
+
+        #twitter-logo {
+            background-image: url(TemplateData100/twitter_icon.svg)
+        }
+
+        #subheader {
+            display: table;
+            margin: 0px auto 30px;
+            max-width: 728px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%
+        }
+
+        .mylinks {
+            width: 30%;
+            padding: 0 20px;
+            color: #D3D9DF
+        }
+
+        .mylinks a {
+            color: #E3E9EF
+        }
+
+        .auth a:hover,
+        .mylinks a:hover {
+            text-decoration: underline;
+            color: #fff
+        }
+
+        .topbanner {
+            max-width: 970px;
+            min-height: 250px;
+            margin: 20px auto
+        }
+
+        .bigText,
+        .content {
+            color: #333
+        }
+
+        .bigText {
+            font-family: 'Passion One', sans-serif;
+            font-weight: 500;
+            font-size: 180%;
+            margin-bottom: 15px
+        }
+
+        .specifications,
+        article p {
+            text-align: justify;
+            font-size: 15px
+        }
+
+        .wrapper {
+            margin: 60px auto 20px;
+            min-width: 340px;
+            display: flex;
+            max-width: 1200px;
+            flex-flow: row wrap
+        }
+
+        .wrapper>* {
+            padding: 10px 20px;
+            flex: 1 100%
+        }
+
+        .content a,
+        .content a:visited {
+            color: #333;
+            text-decoration: underline
+        }
+
+        .specifications {
+            line-height: 20px;
+            margin: 10px auto 0;
+            padding-left: 20px;
+            padding-right: 5px
+        }
+
+        #about {
+            text-align: center
+        }
+
+        @media all and (min-width:38.5em) {
+            nav li {
+                width: 120px;
+                border-bottom: none;
+                height: 32px;
+                line-height: 32px;
+                font-size: 1em;
+                display: inline-block;
+                margin-right: -4px
+            }
+        }
+
+        @media all and (min-width:50em) {
+            #search_bar {
+                display: inline-block
+            }
+
+            #app_name {
+                text-align: center;
+                padding: 8px 0 0
+            }
+
+            #logos {
+                width: 200px
+            }
+
+            #play {
+                min-width: 775px
+            }
+
+            .content {
+                flex: 3 0px;
+                order: 1
+            }
+        }
+
+        p#loadingInfo {
+            text-align: center;
+            color: #333;
+            letter-spacing: 1px;
+            position: absolute;
+            width: 100%;
+            font-family: Monaco, sans-serif;
+            text-transform: uppercase;
+            font-size: 12px
+        }
+
+        article li {
+            padding-bottom: 5px
+        }
+
+        #tonalcenter {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            margin: 20px auto 30px
+        }
+
+        #tonic {
+            display: block;
+            position: absolute;
+            width: 300px
+        }
+
+        .center {
+            display: block;
+            position: absolute;
+            width: 300px
+        }
+
+        .note {
+            background-color: #d3d3d3;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            position: absolute;
+            line-height: 38px;
+            font-weight: 700;
+            font-size: 11px
+        }
+
+        .note:hover {
+            background-color: #d3e9ff;
+            cursor: pointer
+        }
+
+        #note1 {
+            left: 131px;
+            top: 18px;
+            font-size: 14px
+        }
+
+        #note2 {
+            left: 186px;
+            top: 36px
+        }
+
+        #note3 {
+            left: 226px;
+            top: 76px;
+            font-size: 14px
+        }
+
+        #note4 {
+            left: 241px;
+            top: 131px
+        }
+
+        #note5 {
+            left: 226px;
+            top: 186px;
+            font-size: 14px
+        }
+
+        #note6 {
+            left: 186px;
+            top: 226px;
+            font-size: 14px
+        }
+
+        #note7 {
+            left: 131px;
+            top: 241px
+        }
+
+        #note8 {
+            left: 76px;
+            top: 226px
+        }
+
+        #note9 {
+            left: 36px;
+            top: 186px
+        }
+
+        #note10 {
+            left: 21px;
+            top: 131px
+        }
+
+        #note11 {
+            left: 36px;
+            top: 76px
+        }
+
+        #note12 {
+            left: 76px;
+            top: 36px
+        }
+
+        .definition {
+            font-size: 15px;
+            color: #444;
+            margin: 15px;
+            padding: 20px 10px 0;
+            text-align: left
+        }
+    </style>
+
+    <script>
+        var tonica = 0; function rotateImage(a) { switch (a) { case 0: tonica = 0; break; case 30: tonica = 1; break; case 60: tonica = 2; break; case 90: tonica = 3; break; case 120: tonica = 4; break; case 150: tonica = 5; break; case 180: tonica = 6; break; case -150: tonica = 7; break; case -120: tonica = 8; break; case -90: tonica = 9; break; case -60: tonica = 10; break; case -30: tonica = 11 }console.log(tonica), $("#tonic").animate({ rotate: a }, { step: function (a, t) { $(this).css("-webkit-transform", "rotate(" + a + "deg)"), $(this).css("-moz-transform", "rotate(" + a + "deg)"), $(this).css("transform", "rotate(" + a + "deg)") }, duration: 500 }, "linear") }
+    </script>
+
+
+
+    <!--         -->
+</head>
+
+<body>
+
+
+
+    <!-- Logos -->
+    <header>
+        <div id="logos">
+            <a href="https://recursivearts.com" title="Recursive Arts" id="ra_logo">Recursive Arts</a>
+            <div id="ra_name">RECURSIVE ARTS</div>
+        </div>
+        <div id="app_name">Virtual Piano</div>
+    </header>
+
+    <!-- Nav Menu -->
+    <nav>
+        <ul>
+            <li><a class="" href="index.html#play">PLAY</a></li>
+            <li><a class="" href="index.html#songs">SONGS</a></li>
+            <li><a class="" href="index.html#about">ABOUT</a></li>
+            <li><a href="keymapping.html">LEARN</a></li>
+        </ul>
+    </nav>
+
+    <!-- Piano Canvas Section -->
+    <div id="play">
+        <div id="points"></div>
+        <div id="unityContainer">
+            <div id="canvas"></div>
+        </div>
+    </div>
+
+
+    <!-- Learn/About Section -->
+    <div class="wrapper" id="about">
+        <article class="content">
+            <section style="text-align:left;">
+                <h1 class="bigText">Welcome to Recursive Arts Virtual Piano simulator, the ultimate online piano app
+                    that everyone can play</h1>
+                <div class="specifications">
+                    <ul>
+                        <li>Enjoy the sound of a world-class <em>Grand Piano</em> where notes are played using your
+                            computer's keyboard or mouse.</li>
+                        <li>Keep your sound and tempo under control with the dedicated <strong>Sustain</strong>,
+                            <strong>Metronome</strong>, and <strong>Tempo</strong> buttons.</li>
+                        <li>Discover our growing list of free <strong>Interactive Songs</strong> and experience the joy
+                            of playing popular pieces like a professional pianist.</li>
+                        <li>In addition to our original <strong>Piano</strong> sound, you can also access additional
+                            musical instrument sounds such as <strong>Organ</strong>, <strong>Harpsichord</strong>,
+                            <strong>Harp</strong> or <strong>Synthesizer</strong>. These are pro-quality samples of real
+                            instruments recordings selected for their authenticity and musicality.</li>
+                        <li><strong>Record</strong> and <strong>Save</strong> your own music compositions so you can
+                            play them back anytime you want.</li>
+                        <li><strong>Share</strong> your best performances with friends and family with a simple
+                            invitation link.</li>
+                        <li><strong><span style="color:#ce0000">NEW</span></strong> — Native <strong>MIDI</strong> input
+                            support (requires Chrome). Play the virtual piano using your favourite MIDI controller.</li>
+                    </ul>
+                </div>
+                <picture>
+                    <source type="image/webp" srcset="TemplateData100/realistic-3d-piano-keyboard.webp" />
+                    <source type="image/jpg" srcset="TemplateData100/realistic-3d-piano-keyboard.jpg" />
+                    <img class="foto" src="TemplateData100/realistic-3d-piano-keyboard.jpg"
+                        alt="Realistic 3D Virtual Piano Keyboard" height="501" width="1024" />
+                </picture>
+            </section>
+            <section class="learn">
+                <h2>Learn how to play your favourite music ...</h2>
+                <div class="columna">
+                    <div class="instructions">
+                        <h3 class="feature">TWO KEY MAPPINGS</h3><br>REAL - Mirrors the distribution of white and black
+                        keys in a real piano. Three octaves are available.<br>MAX - Black piano keys are pressed using
+                        the Shift modifier key. All five octaves are available<br><span class="more"><a
+                                href="keymapping.html" title="Key Mapping Options">Learn more</a></span>
+                    </div>
+                    <div class="instructions">
+                        <h3 class="feature">SONG MODE</h3><br>Our flexible <em>auto-accompaniment</em> system will let
+                        you execute complex compositions with ease by letting you focus on the main melodic line. Notes
+                        are indicated using LED lights<br><span class="more"><a href="song-mode.html"
+                                title="Song Mode and LED-guided melody">Learn more</a></span>
+                    </div>
+                    <div class="instructions">
+                        <h3 class="feature">PIANO GAME</h3><br>Test your piano playing skills with the new <strong>GAME
+                            MODE</strong>. Collect points as you play any of our interactive songs and challenge your
+                        friends to see who gets the highest score!<br><span class="more"><a href="piano-game.html"
+                                title="Virtual Piano Game">Learn more</a></span>
+                    </div>
+                </div>
+
+                <span class="subFact" style="font-size:85%">Our web based piano is compatible with most modern browsers
+                    supporting WebGL.<br> No additional plugins are required to play this musical instrument</span>
+                <br><br>
+            </section>
+        </article>
+
+        <aside class="aside">
+            <!-- <a href="https://recursivearts.com/online-guitar/">   
+    <picture>
+            <source type="image/webp" srcset="../../virtual-piano/images/Guitar_Ad.webp" />
+            <source type="image/jpg" srcset="../../virtual-piano/images/Guitar_Ad.jpg" />
+            <img class="foto2" src="images/Guitar_Ad.jpg" alt="Teclado de Piano 3D Realista" 
+            height="177" width="300" style="border-radius:5px"/>
+        </picture></a> -->
+
+        </aside>
+    </div>
+
+    <!-- Songs Section -->
+    <div id="songs">
+
+        <div id="songlist">
+            <!-- 71161633/play_header/play_header -->
+
+            <br>
+            <h2 class="bigText">&#8212; Interactive Songs &#8212;</h2><br>
+            <div class="subFact">Just click on any of the following titles to load a piece...<br></div><br>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Pathetique.json');ga('send', 'event', 'VPSong', 'Play', 'Pathetique');">Sonata
+                    No.8 Pathetique (Adagio)</a><br><span class="autor">Ludwig van Beethoven</span>
+                <!-- - <span style="color:orange;font-weight:bold;font-size:80%;">NEW</span> -->
+            </div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/PrinceIgor.json');ga('send', 'event', 'VPSong', 'Play', 'PrinceIgor');">Polovetsian
+                    Dances (Prince Igor)</a><br><span class="autor">Aleksandr Borodin</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/MoonlightSonata.json');ga('send', 'event', 'VPSong', 'Play', 'MoonlightSonata');">Moonlight
+                    Sonata</a><br><span class="autor">Ludwig van Beethoven</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/clairdelune-min.json');ga('send', 'event', 'VPSong', 'Play', 'ClairDeLune');">Clair
+                    de lune</a><br><span class="autor">Claude Debussy</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Summertime.json');ga('send', 'event', 'VPSong', 'Play', 'Summertime');">Summertime</a><br><span
+                    class="autor">George Gershwin</span> - <a class="letra" href="songs/summertime.html">Lyrics</a>
+            </div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/OhSusanna.json');ga('send', 'event', 'VPSong', 'Play', 'OhSusanna');">Oh!
+                    Susanna</a><br><span class="autor">Stephen Foster (Wells)</span> - <a class="letra"
+                    href="songs/OhSusanna.html">Lyrics</a></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Prelude1.json');ga('send', 'event', 'VPSong', 'Play', 'Prelude1');">Prelude
+                    in C Major BWV 846</a><br><span class="autor">J.S.Bach</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/TheEntertainer.json');ga('send', 'event', 'VPSong', 'Play', 'TheEntertainer');">The
+                    Entertainer</a><br><span class="autor">Scott Joplin</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Gymnopedie1.json');ga('send', 'event', 'VPSong', 'Play', 'Gymnopedie1');">Gymnopedie
+                    N.1</a><br><span class="autor">Erik Satie</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Gymnopedie3.json');ga('send', 'event', 'VPSong', 'Play', 'Gymnopedie3');">Gymnopedie
+                    N.3</a><br><span class="autor">Erik Satie</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/RondoAllaTurca.json');ga('send', 'event', 'VPSong', 'Play', 'RondoAllaTurca');">Rondo
+                    Alla Turca</a><br><span class="autor">W.A.Mozart</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Air.json');ga('send', 'event', 'VPSong', 'Play', 'AirDMajor');">Air
+                    in D major BWV 1068</a><br><span class="autor">J.S.Bach</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/CanonPachelbel.json');ga('send', 'event', 'VPSong', 'Play', 'CanonPachelbel');">Canon
+                    in D Major</a><br><span class="autor">Johann Pachelbel</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/FurElise.json');ga('send', 'event', 'VPSong', 'Play', 'FurElise');">F&#252;r
+                    Elise</a><br><span class="autor">Ludwig van Beethoven</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Greensleeves.json');ga('send', 'event', 'VPSong', 'Play', 'Greensleeves');">Greensleeves</a><br><span
+                    class="autor">Traditional</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/HappyBirthday.json');ga('send', 'event', 'VPSong', 'Play', 'HBirthday');">Happy
+                    Birthday</a><br><span class="autor">Patty &amp; Mildred Hill</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Lacrimosa.json');ga('send', 'event', 'VPSong', 'Play', 'Lacrimosa');">Lacrimosa</a><br><span
+                    class="autor">W.A.Mozart</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Menuet.json');ga('send', 'event', 'VPSong', 'Play', 'Menuet');">Menuet
+                    BWV Anh.114</a><br><span class="autor">J.S.Bach</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Ode2Joy.json');ga('send', 'event', 'VPSong', 'Play', 'Ode2Joy');">Ode
+                    to Joy</a><br><span class="autor">Ludwig van Beethoven</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Pavane.json');ga('send', 'event', 'VPSong', 'Play', 'Pavane');">Pavane
+                    pour une infante d&eacute;funte</a><br><span class="autor">Maurice Ravel</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Reverie.json');ga('send', 'event', 'VPSong', 'Play', 'Reverie');">R&ecirc;verie</a><br><span
+                    class="autor">Claude Debussy</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/SonataC.json');ga('send', 'event', 'VPSong', 'Play', 'SonataC');">Sonata
+                    in C Major</a><br><span class="autor">W.A.Mozart</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/ScarboroughFair.json');ga('send', 'event', 'VPSong', 'Play', 'ScarboroughFair');">Scarborough
+                    Fair</a><br><span class="autor">Traditional English Ballad</span></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Twinkle.json');ga('send', 'event', 'VPSong', 'Play', 'Twinkle');">Twinkle
+                    Twinkle Little Star</a><br><span class="autor">Traditional</span></div><br>
+
+            <br>
+
+
+            <div id="songsAd">
+                <!-- 71161633/play_incontent_2/play_incontent_2 -->
+                <!-- <div data-fuse="22383035280"></div>     -->
+            </div>
+
+            <img src="TemplateData100/mistletoe.svg" alt="Christmas Mistletoe" height="50" width="50" align="top"><span
+                style="color: red; font-size:210%;font-family:'Mr De Haviland',cursive;">Christmas Carols</span><img
+                src="TemplateData100/mistletoe.svg"
+                style="-moz-transform: scaleX(-1);-o-transform: scaleX(-1);-webkit-transform: scaleX(-1);transform: scaleX(-1);filter: FlipH; -ms-filter: "
+                FlipH";" alt="Christmas Mistletoe" height="50" width="50" align="top"><br>
+
+            <div class="subFact">Best Christmas Songs and Lyrics to Get You in the Holiday Spirit! </div><br><br>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/JingleBells.json');ga('send', 'event', 'VPSong', 'Play', 'JingleBells');">Jingle
+                    Bells</a><br><span class="autor">James Pierpont</span> - <a class="letra"
+                    href="songs/jingle-bells.html">Lyrics</a></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/AdestesFideles.json');ga('send', 'event', 'VPSong', 'Play', 'AdestesFideles');">Adestes
+                    Fideles</a><br><span class="autor">John Francis Wade</span> - <a class="letra"
+                    href="songs/adestes-fideles.html">Lyrics</a></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/SilentNight.json');ga('send', 'event', 'VPSong', 'Play', 'SilentNight');">Silent
+                    Night</a><br><span class="autor">F.Gruber</span> - <a class="letra"
+                    href="songs/silent-night.html">Lyrics</a></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/DeckTheHalls.json');ga('send', 'event', 'VPSong', 'Play', 'DeckTheHalls');">Deck
+                    The Halls</a><br><span class="autor">Welsh Traditional</span> - <a class="letra"
+                    href="songs/deck-the-halls.html">Lyrics</a></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/TheFirstNoel.json');ga('send', 'event', 'VPSong', 'Play', 'TheFirstNoel');">The
+                    First Noel</a><br><span class="autor">arr.John Stainer</span> - <a class="letra"
+                    href="songs/the-first-noel.html">Lyrics</a></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/HarkAngelsSing.json');ga('send', 'event', 'VPSong', 'Play', 'HarkAngelsSing');">Hark!
+                    The Heral Angels Sing</a><br><span class="autor">Mendelssohn / Cummings</span> - <a class="letra"
+                    href="songs/hark-the-herald-angels-sing.html">Lyrics</a></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/Joy2TheWorld.json');ga('send', 'event', 'VPSong', 'Play', 'Joy2TheWorld');">Joy
+                    to the World</a><br><span class="autor">Traditional</span> - <a class="letra"
+                    href="songs/joy-to-the-world.html">Lyrics</a></div>
+
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Web2Piano('https://recursivearts.com/virtual-piano/songs/WishMerryChristmas.json');ga('send', 'event', 'VPSong', 'Play', 'WishMerryChristmas');">We
+                    Wish you a Merry Christmas</a><br><span class="autor">Traditional</span> - <a class="letra"
+                    href="songs/we-wish-you-a-merry-christmas.html">Lyrics</a></div>
+
+
+        </div><br>
+
+        <span class="fact">More songs coming soon!</span><br>
+
+
+
+        <!-- 71161633/play_footer/play_footer -->
+        <!-- <div data-fuse="22383035277"></div> -->
+
+
+        <div id="scalesList" style="margin-top:50px">
+            <h2 class="bigText">&#8212; Musical Scales and Modes &#8212;</h2><br>
+            <div class="subFact">Select a tonal center (tonic) and click on a scale name to show the corresponding notes
+                on the piano:<br></div><br>
+
+            <div id="tonalcenter">
+                <img src="images/selector.gif" alt="tonal center" id="tonic">
+                <img src="images/12notes.gif" alt="12 notes" class="center">
+                <div id="note1" class="note" onClick="rotateImage(0);">C</div>
+                <div id="note2" class="note" onClick="rotateImage(30);">C#/Db</div>
+                <div id="note3" class="note" onClick="rotateImage(60);">D</div>
+                <div id="note4" class="note" onClick="rotateImage(90);">D#/Eb</div>
+                <div id="note5" class="note" onClick="rotateImage(120);">E</div>
+                <div id="note6" class="note" onClick="rotateImage(150);">F</div>
+                <div id="note7" class="note" onClick="rotateImage(180);">F#/Gb</div>
+                <div id="note8" class="note" onClick="rotateImage(-150);">G</div>
+                <div id="note9" class="note" onClick="rotateImage(-120);">G#/Ab</div>
+                <div id="note10" class="note" onClick="rotateImage(-90);">A</div>
+                <div id="note11" class="note" onClick="rotateImage(-60);">A#/Bb</div>
+                <div id="note12" class="note" onClick="rotateImage(-30);">B</div>
+
+            </div>
+
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('201010110110');">Acoustic
+                    scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('210110101010');">Altered
+                    (Super Locrian) scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('200110011001');">Augmented
+                    scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('201011010111');">Bebop
+                    dominant scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('200101110010');">Blues
+                    scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('211111111111');">Chromatic
+                    scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('210011011001');">Double
+                    harmonic scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('201101010110');">Dorian
+                    mode</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('200010110001');">Hirajoshi
+                    (Japanese) scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('210001100010');">Iwato
+                    (Japanese) scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('210101101010');">Locrian
+                    mode</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('201010110101');">Lydian
+                    mode</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('201010010100');">Major
+                    pentatonic scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('200101010010');">Minor
+                    pentatonic scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Scale2Piano('201011010101');"><strong>Major</strong> scale / Ionian mode</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('201101010101');">Melodic
+                    minor scale</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Scale2Piano('201101011010');"><strong>Minor</strong> scale / Aeloian mode</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#"
+                    onclick="Scale2Piano('201011010110');">Mixolydian mode</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('210101011010');">Phrygian
+                    mode</a></div>
+            <div class="cancion"><a class="songLink" href="index.html#" onclick="Scale2Piano('201010101010');">Whole
+                    tone scale</a></div><br>
+
+            <div class="definition">
+                <p>A <strong>scale</strong> is a set of musical notes ordered as a well-defined sequence of intervals
+                    (tones and semitones). A <strong>semitone</strong> is the minimum distance between two consecutive
+                    notes in any tempered scale (12 equal semitones per octave). In other words, a semitone is also the
+                    distance between two consecutive keys on the piano. For example, the distance between C and C#
+                    (black key next to C), or the distance between E and F (both being white keys). However, the
+                    distance between C and D, for example, is a full tone (or two semitones).</p><br>
+
+                <p>Musical scales are an essential part of music improvisation and composition. Practicing scales will
+                    provide you with the necessary skills to play different styles of music like Jazz, Flamenco or
+                    Blues. You can also use scales to create your own melodies and set the mood of your piece.</p><br>
+
+                <p>Any chosen scale can be transported to any tonal center (e.g. E minor and A minor both use the same
+                    minor scale). The <strong>tonal center</strong> or tonic is the note where the scale hierarchy
+                    starts and it is represented on the virtual piano with a darker blue dot. When playing music under a
+                    particular scale, you should normally avoid any key without a blue dot, although composers sometimes
+                    use <i>altered</i> notes which are not within the scale.</p><br>
+
+                <p>Notes in a scale do not need to be played in a particular order, you can play them in any order you
+                    like, so feel free to improvise!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="links-left">
+            <!-- <a href="https://recursivearts.com/privacy-policy.html">Privacy Policy</a> -->
+            <!-- <a href="https://recursivearts.com/terms-of-service.html">Terms of Service</a></div> -->
+        <div id="copyright">&copy; 2021 Recursive Arts</div>
+        <div id="links-right"><a href="index.html">English</a>
+            <!-- <a                href="https://recursivearts.com/es/virtual-piano/">Español</a> -->
+            </div>
+    </footer>
+
+
+
+    <div id="alertModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content3">
+            <div class="modal-body">
+                <label id="mensaje" class="rec-label"> 请登录</label><br>
+                <a href="https://recursivearts.com/authentication/login.php" class="modal-btn1">Log in</a>
+                <button class="modal-btn2" onclick="closeModal()">Dismiss</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Play a Friends Song Modal Window-->
+    <div id="alertModal3" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content3">
+            <div class="modal-body">
+                <label id="mensaje3" class="rec-label">A friend sent you a song:</label><br>
+                <button class="modal-btn1" onclick="playfriendrec();closeModal();">Play</button>
+                <button class="modal-btn2"
+                    onclick='closeModal();gameInstance.SendMessage("CPU", "desactivarPlay");'>Dismiss</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="alertModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content3">
+            <div class="modal-body">
+                <label id="mensaje2" class="rec-label">You've reached the maximum number of recordings</label><br>
+                <button class="modal-btn2" onclick="closeModal()">Dismiss</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="alertModal4" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content3">
+            <div class="modal-body">
+                <label id="mensaje4" class="rec-label">Use this link to share recording</label><br>
+                <button class="modal-btn2" onclick="closeModal2()">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Save Recording Modal Window-->
+    <div id="recModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content2">
+            <div class="modal-body">
+                <label for="rec-title" class="rec-label">Name your recording:</label><br>
+                <input type="text" id="rec-title" name="rec-title" value="" required=""
+                    title="Type a title for your song here" placeholder="My Song" maxlength="50"><br>
+                <button type="button" class="modal-btn1" name="insert-data" id="insert-data"
+                    onclick="insertData()">Save</button>
+                <button class="modal-btn2" onclick="closeModal();">Discard</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Show Recordings List Modal Window-->
+    <div id="listModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content2">
+            <div class="modal-body">
+                <div class="feature" style="color:white">My Recordings </div>
+                <table id='records_table'>
+                    <thead>
+                        <tr class=''>
+                            <th> </th>
+                            <th>Title</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="TemplateData100/UnityProgress.js.html"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script type="text/javascript">
+        var gameInstance = UnityLoader.instantiate("unityContainer", "Build/Piano2021.json", { onProgress: UnityProgress });
+        var songdata, duration, autor = "";
+        var grabacion = "";
+        var esMovil = "";
+        var recID;
+        var recDur;
+
+        if (grabacion) {
+            recID = "";
+            recDur = "";
+        }    
+        function ga(a,b,c,d,e,f) {
+            console.log('ga called',a,b,c,d,e,f)
+        }
+    </script>
+
+
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" type="text/css" href="TemplateData100/pianostyle04.css" />
+    </noscript>
+
+    <script>
+        var loadDeferredStyles = function () {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "https://recursivearts.com/virtual-piano/js/extrafunctions-8-min.js?v=1";
+            element.src = "./js/extrafunctions-8-min.js?v=1";
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+    </script>
+
+    <!-- <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Passion+One|Quicksand|Mr+De+Haviland&display=swap' ] } 
+  };
+  (function() {
+    var wf = document.createElement('script');
+    // https://cdnjs.cloudflare.com
+    wf.src = 'https://cdnjs.cloudflare.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();</script>         -->
+
+    <!-- <script async type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>  -->
+
+</body>
+
+</html>

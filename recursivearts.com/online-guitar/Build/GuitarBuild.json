@@ -1,0 +1,17 @@
+{
+"companyName": "RecursiveArts",
+"productName": "VirtualGuitar",
+"productVersion": "0.2",
+"dataUrl": "GuitarBuild.data.unityweb",
+"wasmCodeUrl": "GuitarBuild.wasm.code.unityweb",
+"wasmFrameworkUrl": "GuitarBuild.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "GuitarBuild.jpg",
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0a5"
+}

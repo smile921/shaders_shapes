@@ -1,0 +1,1140 @@
+{"Secuencia": [
+    {"title":"Pavane pour une infante défunte"},
+	{"acorde":[
+		{"note": 100, "duration":0, "velocity": 47, "rh": false}]
+	},
+
+
+	{"acorde":[
+		{"note": 55, "duration":2.5, "velocity": 0.6, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 31, "duration":0.5, "velocity": 0.4, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 24, "duration":0.5, "velocity": 0.4, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 40, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.7, "rh": true}]
+	},
+
+	{"acorde":[
+		{"note": 50, "duration":1, "velocity": 0.8, "rh": true},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 26, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 35, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 43, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 28, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.7, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":1, "velocity": 0.5, "rh": true},
+		{"note": 43, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 38, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+
+	{"acorde":[
+		{"note": 59, "duration":2.5, "velocity": 0.9, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 43, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 33, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 60, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 43, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 54, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 38, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":1, "velocity": 0.8, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 31, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 52, "duration":1, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 36, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":1, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 45, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 30, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 45, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 40, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 54, "duration":2, "velocity": 0.8, "rh": true},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 35, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 30, "duration":1, "velocity": 0.5, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 100, "duration":0, "velocity": 44, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 48, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 100, "duration":0, "velocity": 42, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 47, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 31, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 100, "duration":0, "velocity": 40, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 42, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 33, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 100, "duration":0, "velocity": 38, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.6, "rh": false},
+		{"note": 38, "duration":4, "velocity": 0.7, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":2, "velocity": 0.8, "rh": true},
+		{"note": 0, "duration":1, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 35, "duration":2, "velocity": 0.5, "rh": false},
+		{"note": 0, "duration":1, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":1, "velocity": 0.5, "rh": true}]
+	},
+
+	{"acorde":[
+		{"note": 47, "duration":0.05, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 48, "duration":0.05, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.04, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 64, "duration":0.03, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 47, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 59, "duration":2.5, "velocity": 0.85, "rh": true},
+		{"note": 33, "duration":4, "velocity": 0.5, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 47, "duration":1.5, "velocity": 0.6, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 45, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 62, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 55, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 59, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 47, "duration":1, "velocity": 0.7, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 33, "duration":3.5, "velocity": 0.5, "rh": false},
+		{"note": 26, "duration":3.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 42, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 47, "duration":1, "velocity": 0.7, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 45, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 52, "duration":2.5, "velocity": 0.6, "rh": true},
+		{"note": 43, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 40, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 28, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 44, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.6, "rh": true},
+		{"note": 60, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 38, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 26, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 41, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.6, "rh": true},
+		{"note": 67, "duration":0.5, "velocity": 0.6, "rh": false},
+		{"note": 43, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 31, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 37, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.5, "rh": true},
+		{"note": 66, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 60, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 42, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 30, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 35, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": true},
+		{"note": 64, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 59, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 40, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 28, "duration":0.5, "velocity": 0.6, "rh": false},
+		{"note": 100, "duration":0, "velocity": 40, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.85, "rh": true}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 59, "duration":1, "velocity": 0.85, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.85, "rh": true}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 50, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 44, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 35, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 28, "duration":1, "velocity": 0.85, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.33, "velocity": 0.85, "rh": false},
+		{"note": 42, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 33, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 26, "duration":1, "velocity": 0.85, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.33, "velocity": 0.85, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 45, "duration":0.33, "velocity": 0.85, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":2, "velocity": 0.85, "rh": true},
+		{"note": 47, "duration":2, "velocity": 0.85, "rh": false},
+		{"note": 42, "duration":2, "velocity": 0.85, "rh": false},
+		{"note": 38, "duration":2, "velocity": 0.85, "rh": false},
+		{"note": 35, "duration":2, "velocity": 0.85, "rh": false},
+		{"note": 30, "duration":2, "velocity": 0.7, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": true},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 100, "duration":0, "velocity": 47, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.25, "rh": true},
+		{"note": 54, "duration":0.5, "velocity": 0.25, "rh": false}]
+	},
+
+
+	{"acorde":[
+		{"note": 66, "duration":1, "velocity": 0.6, "rh": true},
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 57, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 35, "duration":2, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 57, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 67, "duration":1.5, "velocity": 0.7, "rh": true},
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[	
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 35, "duration":2, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 66, "duration":0.5, "velocity": 0.7, "rh": true},
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 57, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 67, "duration":0.5, "velocity": 0.7, "rh": true},
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 69, "duration":0.5, "velocity": 0.7, "rh": true},
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 62, "duration":1, "velocity": 0.8, "rh": true},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 35, "duration":4, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 61, "duration":3, "velocity": 0.7, "rh": true},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 47, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+
+
+	{"acorde":[
+		{"note": 62, "duration":1, "velocity": 0.7, "rh": true},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 35, "duration":2, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 64, "duration":1.5, "velocity": 0.7, "rh": true},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[	
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 35, "duration":2, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 62, "duration":0.5, "velocity": 0.7, "rh": true},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 64, "duration":0.5, "velocity": 0.7, "rh": true},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 66, "duration":0.5, "velocity": 0.7, "rh": true},
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 59, "duration":1, "velocity": 0.7, "rh": true},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 35, "duration":4, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":1, "velocity": 0.7, "rh": true},
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 52, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":2, "velocity": 0.7, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+
+
+
+	{"acorde":[
+		{"note": 57, "duration":1, "velocity": 0.7, "rh": true},
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 33, "duration":2, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":1.5, "velocity": 0.7, "rh": true},
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 47, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 47, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 47, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 33, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.7, "rh": true},
+		{"note": 54, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 49, "duration":0.5, "velocity": 0.6, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 54, "duration":0.5, "velocity": 0.6, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.6, "rh": false},
+		{"note": 47, "duration":0.5, "velocity": 0.6, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 61, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 54, "duration":0.5, "velocity": 0.6, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.6, "rh": false},
+		{"note": 45, "duration":0.5, "velocity": 0.6, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 54, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 50, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 43, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 35, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 28, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 100, "duration":0, "velocity": 44, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":1.5, "velocity": 0.85, "rh": true},
+		{"note": 47, "duration":1.5, "velocity": 0.85, "rh": false},
+		{"note": 43, "duration":1.5, "velocity": 0.85, "rh": false},
+		{"note": 40, "duration":1.5, "velocity": 0.85, "rh": false},
+		{"note": 33, "duration":1.5, "velocity": 0.85, "rh": false},
+		{"note": 100, "duration":0, "velocity": 42, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 45, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 42, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 38, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 100, "duration":0, "velocity": 40, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 43, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 40, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 33, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 100, "duration":0, "velocity": 38, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 43, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 35, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 28, "duration":0.5, "velocity": 0.8, "rh": false},
+		{"note": 100, "duration":0, "velocity": 36, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":1, "velocity": 0.7, "rh": true},
+		{"note": 47, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 43, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 40, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 33, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 100, "duration":0, "velocity": 33, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":2, "velocity": 0.6, "rh": true},
+		{"note": 45, "duration":2, "velocity": 0.6, "rh": false},
+		{"note": 42, "duration":2, "velocity": 0.6, "rh": false},
+		{"note": 38, "duration":2, "velocity": 0.6, "rh": false}]
+	},
+
+
+	{"acorde":[
+		{"note": 55, "duration":2.5, "velocity": 0.6, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 100, "duration":0, "velocity": 47, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 31, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 24, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 40, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.7, "rh": true}]
+	},
+
+	{"acorde":[
+		{"note": 50, "duration":1, "velocity": 0.8, "rh": true},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 26, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 35, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 43, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 28, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.7, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":1, "velocity": 0.5, "rh": true},
+		{"note": 43, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 38, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+
+	{"acorde":[
+		{"note": 59, "duration":2.5, "velocity": 0.9, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 43, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 33, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 60, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 43, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 54, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 38, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":1, "velocity": 0.8, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 31, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 42, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 52, "duration":1, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 36, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":1, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 45, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 30, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 45, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 40, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 54, "duration":2, "velocity": 0.8, "rh": true},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 35, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 30, "duration":1, "velocity": 0.5, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 100, "duration":0, "velocity": 44, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 48, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 100, "duration":0, "velocity": 42, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 50, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 47, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 31, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 100, "duration":0, "velocity": 40, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 42, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 33, "duration":0.5, "velocity": 0.7, "rh": false},
+		{"note": 100, "duration":0, "velocity": 38, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 47, "duration":0.5, "velocity": 0.6, "rh": false},
+		{"note": 38, "duration":4, "velocity": 0.7, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":2, "velocity": 0.8, "rh": true},
+		{"note": 0, "duration":1, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 35, "duration":2, "velocity": 0.5, "rh": false},
+		{"note": 0, "duration":1, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":1, "velocity": 0.5, "rh": true}]
+	},
+
+	{"acorde":[
+		{"note": 47, "duration":0.05, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 48, "duration":0.05, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.04, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 64, "duration":0.03, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 47, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 59, "duration":2.5, "velocity": 0.85, "rh": true},
+		{"note": 33, "duration":4, "velocity": 0.5, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 47, "duration":1.5, "velocity": 0.6, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 45, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 62, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 55, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 50, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.8, "rh": true},
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 59, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 47, "duration":1, "velocity": 0.7, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 42, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 33, "duration":3.5, "velocity": 0.5, "rh": false},
+		{"note": 26, "duration":3.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 42, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 47, "duration":1, "velocity": 0.7, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 57, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 45, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+
+	{"acorde":[
+		{"note": 52, "duration":2.5, "velocity": 0.6, "rh": true},
+		{"note": 43, "duration":1, "velocity": 0.7, "rh": false},
+		{"note": 0, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.5, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 59, "duration":0.5, "velocity": 0.3, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 40, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 28, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 44, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.6, "rh": true},
+		{"note": 60, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 38, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 26, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 41, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 55, "duration":0.5, "velocity": 0.6, "rh": true},
+		{"note": 67, "duration":0.5, "velocity": 0.6, "rh": false},
+		{"note": 43, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 31, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 37, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":0.5, "velocity": 0.5, "rh": true},
+		{"note": 66, "duration":0.5, "velocity": 0.5, "rh": false},
+		{"note": 60, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 62, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 42, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 30, "duration":0.5, "velocity": 0.3, "rh": false},
+		{"note": 100, "duration":0, "velocity": 35, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.7, "velocity": 0.5, "rh": true},
+		{"note": 64, "duration":0.7, "velocity": 0.5, "rh": false},
+		{"note": 59, "duration":0.7, "velocity": 0.5, "rh": false},
+		{"note": 40, "duration":0.7, "velocity": 0.5, "rh": false},
+		{"note": 28, "duration":0.7, "velocity": 0.6, "rh": false},
+		{"note": 100, "duration":0, "velocity": 40, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 100, "duration":0, "velocity": 39, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 50, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 59, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 100, "duration":0, "velocity": 38, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":0.5, "velocity": 0.85, "rh": true},
+		{"note": 100, "duration":0, "velocity": 37, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 50, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 44, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 35, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 28, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 100, "duration":0, "velocity": 36, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 52, "duration":1, "velocity": 0.85, "rh": true},
+		{"note": 48, "duration":0.33, "velocity": 0.85, "rh": false},
+		{"note": 42, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 33, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 26, "duration":1, "velocity": 0.85, "rh": false},
+		{"note": 100, "duration":0, "velocity": 35, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 47, "duration":0.33, "velocity": 0.85, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 45, "duration":0.33, "velocity": 0.85, "rh": false},
+		{"note": 100, "duration":0, "velocity": 34, "rh": false}]
+	},
+	{"acorde":[
+		{"note": 54, "duration":4, "velocity": 0.85, "rh": true},
+		{"note": 47, "duration":4, "velocity": 0.85, "rh": false},
+		{"note": 42, "duration":4, "velocity": 0.85, "rh": false},
+		{"note": 38, "duration":4, "velocity": 0.85, "rh": false},
+		{"note": 35, "duration":4, "velocity": 0.85, "rh": false},
+		{"note": 30, "duration":4, "velocity": 0.7, "rh": false}]
+	}
+]}
+
+
+
+
+
+
+

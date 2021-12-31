@@ -1,0 +1,17 @@
+{
+"companyName": "Recursive Arts",
+"productName": "VirtualPiano",
+"productVersion": "3.0", 
+"dataUrl": "Piano2021.data.unityweb",
+"wasmCodeUrl": "Piano2021.wasm.code.unityweb",
+"wasmFrameworkUrl": "Piano2021.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "Piano2021.jpg",
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.7f1"
+}

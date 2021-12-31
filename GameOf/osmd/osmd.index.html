@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSMD load</title>
+</head>
+<body>
+    <div id="osmdContainer"/>
+    <script src="./opensheetmusicdisplay.min.js"></script>
+    <script>
+    var osmd = new opensheetmusicdisplay.OpenSheetMusicDisplay("osmdContainer");
+    osmd.setOptions({
+        backend: "canvas",
+        drawTitle: true, 
+        // backend: "canvas",
+        // drawingParameters: "compacttight", // more compact spacing, less padding
+        // drawTitle: false, // included in "compacttight"
+        pageFormat: "A4_P",
+        autoResize: false,
+        coloringEnabled: true,
+        // defaultColorNotehead: "#f71403", // try setting a default color. default is black (undefined)
+        // defaultColorStem: "#031bf7",
+        zoom: 1.4,
+        // drawingParameters: "compacttight" // don't display title, composer etc., smaller margins
+    });
+    osmd
+        .load("./MN0168678_GameofThrones-1.xml")
+        .then(
+        function() {
+            osmd.render();
+        }
+        );
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+ <!doctype html>
+<html lang="en-us">
+  <head>   
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="description" content="The virtual piano is loading but there is no sound">   
+   
+    <title>Virtual Piano | The piano is loading but there is no sound</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="TemplateData100/pianostyle01.css"> 
+      
+ 
+
+    <style>
+      *,nav ul{margin:0;padding:0}#logos,#ra_logo,#ra_name{display:inline-block}#app_name,#search_bar{text-align:right;padding-right:15px}#logos,#search_bar{width:200px;min-width:130px}header{width:100%;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;align-items:center;height:45px;justify-content:space-between;-webkit-justify-content:space-between;background:#333}#logos{height:50px;padding-left:15px}#ra_logo{overflow:hidden;white-space:nowrap;text-indent:100%;background-image:url(../imagenes/RA_Logo_Alfa.svg);width:40px;height:40px;margin-top:4px}#ra_name{vertical-align:top;text-align:left;margin-top:14px;margin-left:3px;width:70px;color:#bbb;font-size:80%;line-height:90%;font-family:Quicksand,sans-serif}#app_name{margin-top:8px;min-width:125px;color:#eee;font-size:210%;font-family:'Mr De Haviland',cursive}#search_bar{font-family:Quicksand,sans-serif;display:none;color:#999;font-size:100%;line-height:100%}@media all and (min-width:50em){#search_bar{display:inline-block}#app_name{text-align:center;padding:0;font-size:240%}#logos{width:200px}}body,nav a:hover{background-color:#eee}nav ul{text-align:center;list-style:none;background-color:#fff}nav a{text-decoration:none;color:#555;display:block;transition:.3s background-color}nav li{font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:40px;height:40px;border-bottom:solid 1px #e6eff8}@media all and (min-width:38.5em){nav li{width:120px;border-bottom:none;height:32px;line-height:32px;font-size:1em;display:inline-block;margin-right:-4px}}body{font-size:100%}#anuncio{width:304px;min-height:600px}h2{display:inline-block;margin:20px 0;font-size:1.45em;font-weight:600;color:#547288;margin:20px 0 5px;font-family:Quicksand,sans-serif}p{font-family:Arial,Helvetica,sans-serif;font-size:90%;padding:10px 0}#categories{display:flex;margin:35px auto 55px;justify-content:center;flex-wrap:wrap;max-width:1100px}.faq{width:80%;text-align:left;font-family:Quicksand,sans-serif;padding:0 20px;}.faqh1{font-family:Quicksand,sans-serif;font-size:150%;padding:30px 10px 20px}@media only screen and (max-width:700px){.faq{display:block;width:100%;max-width:100%}#categories{justify-content:flex-start}}
+    </style>
+      
+  </head>
+    
+  <body>
+      <header> 
+          <div id="logos">
+              <a href="https://recursivearts.com" title="Recursive Arts" id="ra_logo">Recursive Arts</a><div id="ra_name">RECURSIVE ARTS</div>
+          </div>
+          <div id="app_name"><h1 style="font-size:100%;font-weight:normal;">Virtual Piano</h1></div>
+              <div id="search_bar"></div>
+      </header>
+      <nav>      
+                <ul>
+                <li><a class="" href="index.html">PLAY</a></li>
+                <li><a class="" href="index.html#songs">SONGS</a></li>
+                <!--    -->
+                <li><a  class="" href="index.html#about">ABOUT</a></li>
+                <li><a href="keymapping.html">LEARN</a></li>
+                </ul>
+     </nav>
+<div id="categories">   
+    <div class="faq">
+        <h2>The piano is loading but there is no sound</h2>
+        
+        <p>Most browsers including Chrome and Safari have recently implemented an Autoplay Policy which prevents websites from playing audio and video content automatically without the user's consent. Unfortunately, this means that, depending on your browser settings, the virtual piano might be loaded correctly but sounds will not be available unless you take some action. The fix for this issue depends on your browser of choice, so please read below:</p><br>
+        
+        <h3>Chrome</h3>
+        <p>The audio engine behind Recursive Arts Virtual Piano (Web Audio API) has been affected by Chrome's Autoplay Policy since the M71 update was launched in December 2018. Therefore, by default, Chrome now mutes audio unless the user interacts with the domain. In this case, the fix is as simple as <strong>clicking with your mouse anywhere on the piano</strong> before you start playing notes with your computer keyboard. Alternatively, you can also modify Chrome's Autoplay settings to always allow playing sounds without any initial interaction. To do this, load chrome://flags/#autoplay-policy in the Chrome browser and change the <strong>Autoplay Policy</strong> option to <strong>"No user gesture is required"</strong>. 
+        </p><br>
+        <h3>Safari</h3>
+        <p>When using Safari 11 or above, some users experience a muted piano even after interacting with the piano keyboard—piano keys are pressed but they produce no sound. To fix it, go to <strong>Safari > Settings for This Website > Autoplay</strong>. Then, select <strong>'Allow all Autoplay'</strong> and reload the page. The virtual piano should now play sounds correctly everytime you visit our website.</p>
+        <br>
+        <h3>Firefox</h3>
+        <p>If you are using Firefox, detailed information on how to allow or block media autoplay can be found via the following link:</p>
+        <a href="https://support.mozilla.org/en-US/kb/block-autoplay" rel="nofollow">https://support.mozilla.org/en-US/kb/block-autoplay</a>
+        
+        
+    </div>
+</div>
+<br> 
+<footer>
+    <div id="links-left">
+    <a href="https://recursivearts.com/privacy-policy.html">Privacy Policy</a>
+    <a href="https://recursivearts.com/terms-of-service.html">Terms of Service</a></div>
+    <div id="copyright">&copy; 2021 Recursive Arts</div>
+    <div id="links-right"></div>
+</footer>
+      
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Quicksand|Mr+De+Haviland&display=swap' ] } 
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://cdnjs.cloudflare.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();</script>       
+  </body>
+</html>
